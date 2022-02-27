@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            width: 300px;
+            height: 200px;
+            padding-inline-start: 20px;
+            padding-top: 20px;
+            align-content: center;
+
+        }
+    </style>
+    <script>
+        function Xem(){
+            var NgaySinh = document.getElementById('NgaySinh');
+        var cung = document.getElementById('Cung');
+        var lstC = [
+            'Ma Kết','Bảo Bình','Song Ngư','Bạch Dương','Kim Ngưu','Song Tử','Cự Giải','Sư Tử','Xử Nữ', 'Thiên Bình','Bọ Cạp','Nhân Mã'
+            
+        ];
+            if (NgaySinh.value !="") {
+                var day = new Date(NgaySinh.value);
+                var date = day.getDate() ;
+                var month = day.getMonth()+1 ;
+               console.log(date);
+               console.log(month);
+                switch(month) {
+                    case 1:
+                        cung.value = date < 20 ? lstC[0] : lstC[1];
+                    break;
+                    case 2:
+                        cung.value = date < 19 ? lstC[1] : lstC[2];
+                    break;
+                    case 3:
+                        cung.value = date < 21 ? lstC[2] : lstC[3];
+                    break;
+                    case 4:
+                        cung.value = date < 21 ? lstC[3] : lstC[4];
+                    break;
+                    case 5:
+                        cung.value = date < 21 ? lstC[4] : lstC[5];
+                    break;
+                    case 6:
+                        cung.value = date < 22 ? lstC[5] : lstC[6];
+                    break;
+                    case 7:
+                        cung.value = date < 23 ? lstC[6] : lstC[7];
+                    break;
+                    case 8:
+                        cung.value = date < 23 ? lstC[7] : lstC[8];
+                    break;
+                    case 9:
+                        cung.value = date < 23 ? lstC[8] : lstC[9];
+                    break;
+                    case 10:
+                        cung.value = date < 24 ? lstC[9] : lstC[10];
+                    break;
+                    case 11:
+                        cung.value = date < 23 ? lstC[10] : lstC[11];
+                    break;
+                    case 12:
+                        cung.value = date < 22 ? lstC[11] : lstC[0];
+                    break;
+                }
+            }
+            else {
+                alert('Hãy nhập ngày sinh');
+                NgaySinh.focus();
+            }
+
+        }
+       
+       
+    </script>
+</head>
+<body>
+    <form action="" method="post">
+    <div>
+    <label>Ngày Sinh: </label>
+    <input name="NgaySinh" type="date" id='NgaySinh'>
+    <br>
+    <br>
+    <label >Cung hoàng đạo: </label>
+    <input name="Cung" type="text" id="Cung" disabled>
+    <br>
+    <br>
+    <input name="ThucHien" type="button" value="Thực Hiện" onclick="Xem()">
+    <input name="Xoa" type="reset" value="Xóa" >
+   </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tach(){
+          var chuoi=document.getElementById("ip1").value;
+          var tach=chuoi.split(",");
+          var length = tach.length;
+          var c=document.getElementById("loi1")
+          console.log(tach);
+          console.log(length);
+          var select = document.getElementById('slc');
+          if(chuoi!=""){
+          for (var i = 1; i<=length; i++){  
+            var tach=chuoi.split(",",i);  
+            var opt = document.createElement('option');
+            opt.value = i;
+            opt.innerHTML = tach.slice(-1);//chuoi.split(",",i);
+            select.appendChild(opt);
+            c.innerHTML="";
+            
+          }
+        }
+          else
+          { 
+              //alert("Thiếu dữ liệu")
+              c.innerHTML="*Thiếu dữ liệu";
+              document.getElementById("ip1").focus();
+              var  L = slc.options.length ;
+              console.log(L);
+              for (var i = L; i >= 0; i--){  
+               select.remove(i);
+           }  
+           
+          }}
+          
+
+
+    </script>
+    <style>
+      #di{
+        border-color: black;
+        border-style: solid;
+        border-width: 2px; 
+        width: 400px;
+        height: 200px;
+        padding-top: 50px;
+        
+      }
+      #loi1{
+        color: rgb(247, 23, 23);
+      }
+      select{
+        width: 100px;
+      }
+
+
+      input{
+        margin-left: 30px;
+      }
+
+    </style>
+</head>
+<body>
+  <div id="di" >
+    <script>
+      
+    </script>
+    <form action="" method="post">
+    
+      <label>Chuỗi:  </label>
+      <input name="ip1"type="text" value="" id="ip1"><span id="loi1"></span>
+      <br>
+      <br>
+      <label>Danh sách:</label>
+      <select name="slc" id="slc" onchange="tach()">    
+        
+      </select>
+      <br>
+      <br>
+       <input  type="button" value="Thực hiện" >
+      
+       <input type="reset" value="Xóa" > 
+</form>
+</div>
+</body>
+</html>

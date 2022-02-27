@@ -1,0 +1,153 @@
+@media(max-width:768px){
+    .bocuc{
+        flex-direction: column;
+        width: 100% !important;
+    }
+    .mn>li{
+        width: 100% !important;
+        margin-right: 50px !important;
+       
+    }
+    li:hover{
+        width: 100% !important;
+        
+    }
+    .m1 li{
+        width: 100% !important;
+    }
+    .m1{
+        width: 100% !important;
+        background-color:rgba(243, 243, 252,0.9) !important;
+        padding-bottom: 2px;
+        z-index:1
+       
+        
+    }
+    /*.timkiem form{
+        padding-bottom: 10px;
+    }*/
+    .menu{
+        width: 100% !important;
+        text-align: center !important;
+
+       
+    }
+    .m1 li:hover{
+        background-color:rgb(224, 223, 223) !important;
+        width:100% !important;
+    }
+    .noidung{
+        flex-direction: column;
+        width: 100% !important;
+        margin-left: 30px;
+    }
+    .timkiem{
+        width: 100% !important;
+    }
+    .content{
+        width: 100% !important;
+        text-align: center;
+    }
+    .anh{
+        width: 40% !important;
+    }
+}
+.bocuc{
+    width: 100%;
+}
+.header{
+    background-color: rgb(82, 112, 81);
+    color: white;
+    width: 99,3%;
+    height: 67px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-inline-start: 10px;
+}
+.menu {
+    background-color: rgb(70, 206, 252);
+    width: 100%;
+    text-align: right;
+    margin-top: -15px;  
+}
+ul{
+    padding-inline-start: 1px;
+    
+}
+.mn li{
+    display: inline-block;  
+    
+    width: 300px;
+    height: 50px; 
+    text-align: center;
+    position: relative;
+    line-height: 50px;
+    
+    
+}
+li:hover{
+    background-color:dodgerblue;    
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    
+ }
+.m1{ 
+    background-color:lavender;
+    position: absolute; 
+    width: 100%;
+    display: none;
+ 
+}
+ li:hover .m1{
+    display: block;  
+}
+.m1 li:hover{
+    background-color: darkorange;
+    width: 100%;
+    margin-left: 0px;
+}
+.m1 a{
+    color: black; 
+}
+.noidung{
+    width: 100%;
+    display: flex;
+}
+.timkiem{
+    width: 25%;
+}
+
+.content{
+   width: 75%;
+   text-align: center;
+   margin-top: 20px;
+
+}
+.anh{
+    width: 20%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    float: left;
+    margin:10px;
+}
+.anh p{
+    text-align: left;
+    margin-left: 10px;
+}
+img{
+    width: 90%;
+}
+.footer{
+    background-color:deepskyblue ;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 12%; 
+    bottom: 0;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Bai7.js"></script>
+    <title>Bai7</title>
+    
+    <style>
+        div{
+            box-sizing: 2px;
+            border-color: black;
+            border-style: solid;
+            margin-left: 500px;
+            margin-top: 200px;
+            width: 300px;
+            height: 150px;
+            padding-inline-start: 20px;
+        }
+    </style>
+</head>
+<body >
+    
+    <div  >
+        <label for="slc" onclick="load()">Danh sách hãng sản xuất CPU:</label>
+        <select id="slc" >
+
+        </select >
+        <br>
+        <br>
+        <label id="Han">Hãng: </label>
+        <input type="text" value="" id="Hang">
+        <br>
+        <br>
+        <input type="button" value="Thêm" name="them" onclick="them()" id="Them">
+        <input type="button" value="Hủy"name="Huy" id="Huy">
+        <input type="button" value="Lưu"name="Luu" id="Luu" onclick="Luu()">
+        
+        
+    </div>
+</body>
+</html>

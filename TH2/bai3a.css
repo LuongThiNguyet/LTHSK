@@ -1,0 +1,22 @@
+body{
+    background-color:rgb(191, 238, 250) ;
+}
+header{
+    text-align: center;
+    color:darkblue;
+   
+}
+.menu{
+    text-align: center;
+}
+.noidung{
+    margin-top: 50px;
+}
+.phan2{
+    padding-inline-start: 100px;
+}
+footer{
+    text-align: center;
+    color: darkorchid;
+    margin-top: 100px;
+}
